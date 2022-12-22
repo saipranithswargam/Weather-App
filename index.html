@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  -->
+    <title>dailyopenWeather</title>
+</head>
+<body>
+    <div style="display: flex;justify-content: center;margin:7%;height:60vh;">
+    <form class="rounded-lg drop-shadow-2xl" style="overflow: hidden; background-color: rgb(195, 243, 243);text-align:center;display: flex;flex-direction:column;align-items: center;justify-content: center;width: 100%;margin: bottom 50px;;" action="/" method="post">
+        <h1 class=" animate-bounce head text-slate-800" style="text-align:center;font-size: 3rem;margin-bottom: 20px;">Weather Data</h1>
+        <input class="border-2 border-slate-300 focus:outline-0 rounded-lg" autocomplete="off" style="margin-bottom: 25px;padding: 10px 20px;" type="text" name="Cityname" placeholder="Cityname">
+        <button class="animate-pulse antialiased border border-slate-300 transition ease-in-out delay-50 bg-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none" style="font-size: x-large;font-weight: 600;display:block;text-align:center;padding:5px 50px;background-color: rgb(50, 255, 187);border-radius: 8px;" type="submit">Go</button>
+    </form>
+</div>
+<script src="check.js"></script>
+</body> 
+</html>

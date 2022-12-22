@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet"> 
+</head>
+<body>
+    <div class="res border-slate-300 drop-shadow-2xl">
+        <h1 class="animate-bounce">Thanks For Using Our Weather APP</h1>
+        <p class= "res-p" id="weatherRep" >The Temperature at <%=place%>  <%=temp%> deg&#8451 </p>
+        <img class="icon" src="<%=icon%>" /> 
+        <p class="res-p" id="des"><%=des%> </p>
+        <form action="/result" method="post">
+            <button name="name" class="animate-pulse antialiased border border-slate-300 transition ease-in-out delay-50 bg-slate-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 hover:animate-none" style="font-weight: 600;display:block;text-align:center;padding:5px 10px;background-color: rgb(50, 255, 187);border-radius: 8px; margin-top: 5%" type="submit">CheckAgain</button>
+        </form>
+    </div>
+
+</body>
+</html>
